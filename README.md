@@ -16,18 +16,6 @@ Watcher(
 
 ## Installation
 
-This is a [Node.js](https://nodejs.org/en/) module available through the
-[npm registry](https://www.npmjs.com/).
-
-Before installing, [download and install Node.js](https://nodejs.org/en/download/).
-Node.js 0.10 or higher is required.
-
-If this is a brand new project, make sure to create a `package.json` first with
-the [`npm init` command](https://docs.npmjs.com/creating-a-package-json-file).
-
-Installation is done using the
-[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
-
 ```console
 $ npm install demux-atomic-events
 ```
@@ -44,10 +32,10 @@ $ npm install demux-atomic-events
 
 ## Example
 
-  The quickest way to get started with demux-atomic-events is to check given [example](https://github.com/Atulpal9045/demux-atomic-events/example.js) to listen events on your server.
+[example](https://github.com/Atulpal9045/demux-atomic-events/example.js) to listen events on your server.
 
 
-  Clone example the app:
+clone above example:
 
 ```console
 $ git clone https://github.com/Atulpal9045/demux-atomic-events
@@ -70,7 +58,7 @@ $ npm start
 
 ## People
 
-The original author of Express is [Atul Pal](https://github.com/Atulpal9045)
+The original author of this is [Atul Pal](https://github.com/Atulpal9045)
 
 
 
