@@ -1,0 +1,6 @@
+{
+  "blockNumber": 0,
+  "endPoint": "https://wax.greymass.com",
+  "maxStateHistoryLength": 300,
+  "whitelist": "http://127.0.0.1:3000/data"
+}
