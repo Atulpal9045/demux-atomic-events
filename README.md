@@ -1,9 +1,11 @@
 Listen atomicassets NFT events on web framework for [Node.js](http://nodejs.org).
 
 ```js
+const { Watcher } = require("demux-atomic-events");
+
 const blockNumber = 0
-const nodeEosEndpoint = "https://wax.greymass.com"
-const whitelistPostApi = "http://127.0.0.1:3000/data" 
+const nodeEosEndpoint = process.env.NODE_EOS_ENDPOINT
+const whitelistPostApi = process.env.APPLICATION_POST_API
 const maxStateHistoryLength = 300
 
 Watcher(

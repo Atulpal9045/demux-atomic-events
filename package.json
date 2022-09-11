@@ -1,12 +1,12 @@
 {
   "name": "demux-atomic-events",
-  "version": "1.0.0",
-  "description": "This lib for getting all log events of atomicasets using demax-js.",
+  "version": "1.0.1",
+  "description":"Getting all events from atomicasets using demax-js.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "atul_pal_99",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
@@ -15,5 +15,10 @@
     "dotenv": "^16.0.2",
     "eosjs": "^22.1.0",
     "isomorphic-fetch": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Atulpal9045/demux-atomic-events.git"
+  },
+  "homepage": "https://github.com/Atulpal9045/demux-atomic-events"
 }
