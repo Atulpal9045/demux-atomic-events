@@ -1,6 +1,6 @@
 const { default: axios } = require("axios");
 const { AbstractActionHandler, Block, HandlerVersion } = require("demux");
-const config = require("../Config.json");
+const config = require("../demux-atomic-config.json");
 let state = {
   endpoint: config.endPoint,
   indexState: {

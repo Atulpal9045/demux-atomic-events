@@ -58,6 +58,11 @@ $ npm start
 
   View the website at: http://localhost:3000
 
+After running it will generate cofig file in the root directory - 
+```
+demux-atomic-config.json
+```
+
 ## People
 
 The original author of this is [Atul Pal](https://github.com/Atulpal9045)

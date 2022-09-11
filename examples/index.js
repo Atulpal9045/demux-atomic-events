@@ -8,10 +8,13 @@
  * 2. create a server and post api where you want to listen all the atomic-assets events
  * 3. you have to create a watcher to watch for your ip to atomicassets contract on Antelope.io based chains.
  * 4. After listening events all the block and event info will be get from request in that api.
+ * 5. Add demux-atomic-config file into gitignore file before pushing to github.
  */
 
 const { Watcher, getStateHistory } = require("demux-atomic-events");
 const express = require("express");
+require("dotenv").config();
+
 const app = express();
 
 app.use(
@@ -25,28 +28,31 @@ app.use(express.json());
 app.use("/*", function (req, res) {
   res.send("Listening express server!!");
 });
+
 /* express server to listen event for this post */
 
 app.post("/data", function (req, res) {
-  console.log(req.body); // use this data to store all event informations
+  // use this data to store all event informations
+  console.log(req.body);
 });
 
 app.listen(3000);
 
 /* create watcher instance to start listing */
+
 Watcher(
-  0, // example block number to listen
-  "https://wax.greymass.com", // wax mainnet endpoint to listen
-  300, // stateHistory Length to set
-  "http://127.0.0.1:3000/data" // api whitelist to get information
+  // example block number to listen
+  0,
+  // wax mainnet endpoint to listen
+  process.env.NODE_EOS_ENDPOINT,
+  // stateHistory Length to set
+  300,
+  // api whitelist to get information
+  process.env.APPLICATION_POST_API
 );
 
-/* 
-** default values of config **
-
-Watcher(0, "https://wax.greymass.com", 300, "http://127.0.0.1:3000/data");
-*/
-
 /* For get all the event history data for your project */
+
 const history = getStateHistory();
+
 console.log("history", history);
