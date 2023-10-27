@@ -9,7 +9,7 @@
   "author": "atul_pal_99",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.6.0",
     "demux": "^4.0.0",
     "demux-eos": "^4.0.1",
     "dotenv": "^16.0.2",
